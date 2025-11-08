@@ -2,3 +2,13 @@ config.php
 /vendor/
 
 composer.lock
+_mesh_cache
+x.out
+y.out
+mesharray.txt
+tree.html
+xx
+arraydata.txt
+index_html.php.bak
+_host_cache
+work.txt
