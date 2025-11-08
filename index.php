@@ -38,9 +38,14 @@ if($lifecall){
  * HostArray
  */
 $active_hosts = array();
+$hostbymac = array();
 foreach($hostdata['Item'] as $hd ){
     if($hd['Active'] > 0){
         $active_hosts[] = $hd;
+        $mac = $hd['MACAddress'];
+        $hostbymac[$mac] = $hd;
+
+
     }
 }
 

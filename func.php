@@ -1,6 +1,119 @@
 <?php 
 
 
+use blacksenator\fritzsoap\hosts;
+
+
+
+    $n4t = array();
+    $nodes = array();
+    $active_hosts = array();
+    $hostbymac = array();
+    $children = [];
+
+
+
+
+function GetFritzData($lifecall = true){
+    global $CONFIG, $n4t, $nodes,$active_hosts,$hostbymac,$children;
+    $tfile['mesh'] = __DIR__ . "/_mesh_cache";
+    $tfile['host'] = __DIR__ . "/_host_cache";
+    $tfile['hostraw'] = __DIR__ . "/_host_raw_cache";
+    if($lifecall){
+        $fritz_user = $CONFIG['fritz']['user']; 
+        $fritz_url = $CONFIG['fritz']['host'];
+        $fritz_pwd = $CONFIG['fritz']['pass'];    
+        $fritzbox = new hosts($fritz_url, $fritz_user, $fritz_pwd);
+        $fritzbox->getClient();
+        $data =  $fritzbox->getHostList();
+        $tmp =  $fritzbox->getMeshList(true);
+        $meshdata = json_decode($tmp,true);
+        $hostdata = json_decode(json_encode($data),true);
+        file_put_contents($tfile['mesh'], json_encode($meshdata));
+        file_put_contents($tfile['host'], json_encode($hostdata));  
+    }else{
+        $meshdata = json_decode( file_get_contents($tfile['mesh']), true);
+        $hostdata = json_decode( file_get_contents($tfile['host']), true);
+    }
+
+    foreach($hostdata['Item'] as $hd ){
+        if($hd['Active'] > 0){
+            $active_hosts[] = $hd;
+                        $mac = $hd['MACAddress'];
+            $hostbymac[$mac] = $hd;
+        }
+
+            if(isset($hd['X_AVM-DE_MACAddressList'])){
+                    if(is_array($hd['X_AVM-DE_MACAddressList'])){
+                        $altmac = $hd['X_AVM-DE_MACAddressList'];
+                    }else{
+                        $altmacs = explode(',',$hd['X_AVM-DE_MACAddressList']);
+                    }
+                    foreach($altmacs as $altmac){
+                        $hostbymac[$altmac] = $hd;
+                    }
+            }
+
+
+
+
+
+
+    }
+
+
+    foreach($meshdata['nodes'] as $node){
+        $nodes[$node['uid']] = $node;
+        $n4t[$node['uid']] = CleanNodeExtreme($node);
+    }
+
+    foreach ($nodes as &$node) {
+        if (!isset($node['node_interfaces'])) continue;
+
+        foreach ($node['node_interfaces'] as &$interface) {
+            if (!isset($interface['node_links'])) continue;
+
+            // Keep only node_links with state == 'CONNECTED'
+            $interface['node_links'] = array_filter(
+                $interface['node_links'],
+                function ($link) {
+                    return isset($link['state']) && $link['state'] === 'CONNECTED';
+                }
+            );
+        }
+    }
+    unset($node, $interface); // Good practice to unset references
+
+
+
+    $children = [];
+    foreach ($nodes as $uid => $node) {
+        if (!isset($node['node_interfaces']) || !is_array($node['node_interfaces'])) continue;
+        foreach ($node['node_interfaces'] as $iface) {
+            if (!isset($iface['node_links']) || !is_array($iface['node_links'])) continue;
+            foreach ($iface['node_links'] as $link) {
+                if (isset($link['node_1_uid'], $link['node_2_uid'])) {
+                    $p = $link['node_1_uid'];
+                    $c = $link['node_2_uid'];
+                    $children[$p][] = $c;
+                }
+            }
+        }
+    }
+
+    foreach ($children as &$parent){    
+        $parent= array_unique($parent);
+    }
+
+
+}
+
+
+
+
+
+
+
 /**
  * Build a tree/forest from flat $nodes while preventing infinite loops.
  *
@@ -225,14 +338,32 @@ function removeNodeIterfaces(array &$array) {
 
 
 
+$cntx=0;
 
 function GetNodeBadge($nodename){
-    global $nodes;
+    global $nodes, $cntx, $hostbymac;
+    $cntx++;
     $tn = $nodes[$nodename];
     $out = $nodename . "<br>";
-    $out .= $tn['device_name'];
+    $out .= $tn['device_name'] .  "<br>";
+    $out .= $tn['device_mac_address'] . "<br>";
+    $device = $hostbymac[$tn['device_mac_address']];
+    $out .= $device['IPAddress'] . "<br>";
 
- //   $out .= print_r($tn,true);
+    $out .= $device['HostName'] . "<br>";
+
+    $out .= $device['InterfaceType'] . "<br>";
+
+    $out .= $device['X_AVM-DE_Speed'] . "<br>";
+
+
+    if($cntx < 2)   {
+        
+        
+        
+        
+        $out .= "<pre>" . print_r($tn,true) . "</pre>";
+    }
     return $out;
 }
 

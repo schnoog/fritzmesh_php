@@ -12,6 +12,9 @@ use blacksenator\fritzsoap\hosts;
 $makeclean = true;
 
 $lifecall = false;
+
+
+/*
 $tfile['mesh'] = __DIR__ . "/_mesh_cache";
 $tfile['host'] = __DIR__ . "/_host_cache";
 
@@ -33,40 +36,47 @@ if($lifecall){
     }
 
 $active_hosts = array();
-
+$hostbymac = array();
 foreach($hostdata['Item'] as $hd ){
     if($hd['Active'] > 0){
         $active_hosts[] = $hd;
+        $mac = $hd['MACAddress'];
+        $hostbymac[$mac] = $hd;
+        if(isset($hd['X_AVM-DE_MACAddressList'])){
+                $altmacs = explode(',',$hd['X_AVM-DE_MACAddressList']);
+                foreach($altmacs as $altmac){
+                    $hostbymac[$altmac] = $hd;
+                }
+        }
     }
 }
 
 
-$n4t = array();
-$nodes = array();
-foreach($meshdata['nodes'] as $node){
-    $nodes[$node['uid']] = $node;
-    $n4t[$node['uid']] = CleanNodeExtreme($node);
-}
-
-foreach ($nodes as &$node) {
-    if (!isset($node['node_interfaces'])) continue;
-
-    foreach ($node['node_interfaces'] as &$interface) {
-        if (!isset($interface['node_links'])) continue;
-
-        // Keep only node_links with state == 'CONNECTED'
-        $interface['node_links'] = array_filter(
-            $interface['node_links'],
-            function ($link) {
-                return isset($link['state']) && $link['state'] === 'CONNECTED';
-            }
-        );
+    $n4t = array();
+    $nodes = array();
+    foreach($meshdata['nodes'] as $node){
+        $nodes[$node['uid']] = $node;
+        $n4t[$node['uid']] = CleanNodeExtreme($node);
     }
-}
-unset($node, $interface); // Good practice to unset references
+
+    foreach ($nodes as &$node) {
+        if (!isset($node['node_interfaces'])) continue;
+
+        foreach ($node['node_interfaces'] as &$interface) {
+            if (!isset($interface['node_links'])) continue;
+
+            // Keep only node_links with state == 'CONNECTED'
+            $interface['node_links'] = array_filter(
+                $interface['node_links'],
+                function ($link) {
+                    return isset($link['state']) && $link['state'] === 'CONNECTED';
+                }
+            );
+        }
+    }
+    unset($node, $interface); // Good practice to unset references
 
 
-$nodepath = array();
 
     $children = [];
     foreach ($nodes as $uid => $node) {
@@ -83,29 +93,14 @@ $nodepath = array();
         }
     }
 
-
-    $isChild = [];
-    foreach ($children as $p => $list) {
-        foreach ($list as $c) $isChild[$c] = true;
-    }
-    $roots = [];
-    foreach ($nodes as $uid => $_) {
-        if (!isset($isChild[$uid])) $roots[] = $uid;
-    }
-    if (empty($roots)) {
-        // fallback: use all node keys (graph might be a cycle with no standalone root)
-        $roots = array_keys($nodes);
+    foreach ($children as &$parent){    
+        $parent= array_unique($parent);
     }
 
 
+*/
 
-foreach ($children as &$parent){    
-$parent= array_unique($parent);
-}
-//exit;
-
-
-
+GetFritzData(false);
 
 
 
@@ -223,6 +218,9 @@ body {
 </div>
 <?php
 echo "<pre>" . print_r($children,true) . "</pre>";
+echo "<pre>" . print_r($hostbymac,true) . "</pre>";
+
+
 ?>
 </body>
 </html>
