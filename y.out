@@ -1,0 +1,173 @@
+Array
+(
+    [nodetree] => Array
+        (
+            [forest] => Array
+                (
+                    [0] => Array
+                        (
+                            [uid] => n-1
+                            [children] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [uid] => n-102
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [uid] => n-29
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [uid] => n-112
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [uid] => n-39
+                                        )
+
+                                    [4] => Array
+                                        (
+                                            [uid] => n-70
+                                        )
+
+                                    [5] => Array
+                                        (
+                                            [uid] => n-91
+                                        )
+
+                                    [6] => Array
+                                        (
+                                            [uid] => n-23
+                                        )
+
+                                    [7] => Array
+                                        (
+                                            [uid] => n-47
+                                        )
+
+                                    [8] => Array
+                                        (
+                                            [uid] => n-376
+                                        )
+
+                                    [9] => Array
+                                        (
+                                            [uid] => n-78
+                                        )
+
+                                    [10] => Array
+                                        (
+                                            [uid] => n-405
+                                        )
+
+                                    [11] => Array
+                                        (
+                                            [uid] => n-133
+                                        )
+
+                                    [12] => Array
+                                        (
+                                            [uid] => n-272
+                                        )
+
+                                    [13] => Array
+                                        (
+                                            [uid] => n-274
+                                        )
+
+                                    [14] => Array
+                                        (
+                                            [uid] => n-188
+                                        )
+
+                                    [15] => Array
+                                        (
+                                            [uid] => n-104
+                                            [children] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [uid] => n-297
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [uid] => n-299
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [uid] => n-301
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [uid] => n-304
+                                                        )
+
+                                                    [4] => Array
+                                                        (
+                                                            [uid] => n-306
+                                                        )
+
+                                                    [5] => Array
+                                                        (
+                                                            [uid] => n-308
+                                                        )
+
+                                                    [6] => Array
+                                                        (
+                                                            [uid] => n-310
+                                                        )
+
+                                                    [7] => Array
+                                                        (
+                                                            [uid] => n-312
+                                                        )
+
+                                                    [8] => Array
+                                                        (
+                                                            [uid] => n-314
+                                                        )
+
+                                                    [9] => Array
+                                                        (
+                                                            [uid] => n-109
+                                                            [children] => Array
+                                                                (
+                                                                    [0] => Array
+                                                                        (
+                                                                            [uid] => n-268
+                                                                        )
+
+                                                                    [1] => Array
+                                                                        (
+                                                                            [uid] => n-270
+                                                                        )
+
+                                                                    [2] => Array
+                                                                        (
+                                                                            [uid] => n-276
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "blacksenator/fritzsoap": "^2.8"
+    }
+}

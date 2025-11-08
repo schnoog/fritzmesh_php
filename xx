@@ -1,0 +1,31 @@
+                                                            [max_data_rate_rx] => 1000000
+                                                            [max_data_rate_tx] => 1000000
+                                                            [cur_data_rate_rx] => 1000000
+                                                            [cur_data_rate_tx] => 1000000
+                                                            [cur_availability_rx] => 99
+                                                            [cur_availability_tx] => 99
+                                                            [learned_via_lldp] => 
+[radio_id] => Array
+                                            [ssid] => VolkerWLAN
+                                            [opmode] => AP
+                                            [security] => WPA2PSK
+                                            [supported_streams_tx] => Array
+
+                                            [supported_streams_rx] => Array
+                                                )
+
+                                            [current_channel] => 36
+                                            [current_channel_info] => Array
+                   [phymodes] => Array
+                                            [channel_utilization] => 5
+                                            [anpi] => -103
+                                            [steering_enabled] => 1
+                                            [11k_friendly] => 
+                                            [11v_friendly] => 
+                                            [legacy_friendly] => 1
+                                            [rrm_compliant] => 
+                                            [mlo_modes] => Array
+                                                (
+                                                )
+
+                                            [channel_list] => Array

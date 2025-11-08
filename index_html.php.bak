@@ -1,0 +1,170 @@
+<?php
+
+
+require_once( __DIR__  . "/vendor/autoload.php");
+require_once(__DIR__ . "/config.php");
+require_once(__DIR__ . "/func.php");
+
+
+
+use blacksenator\fritzsoap\hosts;
+
+$makeclean = true;
+
+$lifecall = false;
+$tfile['mesh'] = __DIR__ . "/_mesh_cache";
+$tfile['host'] = __DIR__ . "/_host_cache";
+
+if($lifecall){
+        $fritz_user = $CONFIG['fritz']['user']; 
+        $fritz_url = $CONFIG['fritz']['host'];
+        $fritz_pwd = $CONFIG['fritz']['pass'];    
+        $fritzbox = new hosts($fritz_url, $fritz_user, $fritz_pwd);
+        $fritzbox->getClient();
+        $data =  $fritzbox->getHostList();
+        $tmp =  $fritzbox->getMeshList(true);
+        $meshdata = json_decode($tmp,true);
+        $hostdata = json_decode(json_encode($data),true);
+        file_put_contents($tfile['mesh'], json_encode($meshdata));
+        file_put_contents($tfile['host'], json_encode($hostdata));  
+    }else{
+        $meshdata = json_decode( file_get_contents($tfile['mesh']), true);
+        $hostdata = json_decode( file_get_contents($tfile['host']), true);
+    }
+
+$active_hosts = array();
+
+foreach($hostdata['Item'] as $hd ){
+    if($hd['Active'] > 0){
+        $active_hosts[] = $hd;
+    }
+}
+
+
+$n4t = array();
+$nodes = array();
+foreach($meshdata['nodes'] as $node){
+    $nodes[$node['uid']] = $node;
+    $n4t[$node['uid']] = CleanNodeExtreme($node);
+}
+
+foreach ($nodes as &$node) {
+    if (!isset($node['node_interfaces'])) continue;
+
+    foreach ($node['node_interfaces'] as &$interface) {
+        if (!isset($interface['node_links'])) continue;
+
+        // Keep only node_links with state == 'CONNECTED'
+        $interface['node_links'] = array_filter(
+            $interface['node_links'],
+            function ($link) {
+                return isset($link['state']) && $link['state'] === 'CONNECTED';
+            }
+        );
+    }
+}
+unset($node, $interface); // Good practice to unset references
+
+
+$nodepath = array();
+
+    $children = [];
+    foreach ($nodes as $uid => $node) {
+        if (!isset($node['node_interfaces']) || !is_array($node['node_interfaces'])) continue;
+        foreach ($node['node_interfaces'] as $iface) {
+            if (!isset($iface['node_links']) || !is_array($iface['node_links'])) continue;
+            foreach ($iface['node_links'] as $link) {
+                if (isset($link['node_1_uid'], $link['node_2_uid'])) {
+                    $p = $link['node_1_uid'];
+                    $c = $link['node_2_uid'];
+                    $children[$p][] = $c;
+                }
+            }
+        }
+    }
+
+
+    $isChild = [];
+    foreach ($children as $p => $list) {
+        foreach ($list as $c) $isChild[$c] = true;
+    }
+    $roots = [];
+    foreach ($nodes as $uid => $_) {
+        if (!isset($isChild[$uid])) $roots[] = $uid;
+    }
+    if (empty($roots)) {
+        // fallback: use all node keys (graph might be a cycle with no standalone root)
+        $roots = array_keys($nodes);
+    }
+
+
+echo "<pre>" . print_r($children,true) . "</pre>";
+
+
+exit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$todel = array();
+$nodetree = buildNodeTreeSafe($n4t);
+for($x = 0; $x < count ($nodetree['forest']);$x++){
+    $nlinknum=0;
+    for($y = 0; $y < count ($nodetree['forest'][$x]['node_interfaces']); $y++){
+        $nlinknum += count($nodetree['forest'][$x]['node_interfaces'][$y]['node_links']);
+    }
+
+
+
+    unset($nodetree['forest'][$x]['node_interfaces']);  
+    if($nlinknum < 1){
+        $todel[] = $x;
+       // unset($nodetree['forest'][$x]);
+    }
+}
+removeEmptyChildren($nodetree);
+removeNodeIterfaces($nodetree);
+
+//Cleanup abandones meshs
+if(count($todel)>0){
+    rsort($todel);
+    foreach($todel as $del){
+        unset($nodetree['forest'][$del]);
+    }
+}
+unset($nodetree['skipped_links']);
+
+
+$out = [
+    'nodes' => $nodes
+];
+
+
+$out = [
+    'nodetree' => $nodetree
+];
+
+
+
+
+echo renderTreeChart($nodetree);
+
+echo "<pre>" . print_r($nodetree['forest'],true) . "</pre>";
+
+$outfile = __DIR__ . "/tree.html";
+

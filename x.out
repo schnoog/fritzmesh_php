@@ -1,0 +1,2266 @@
+Array
+(
+    [nodes] => Array
+        (
+            [n-1] => Array
+                (
+                    [uid] => n-1
+                    [device_friendly_name] => 
+                    [device_name] => FRITZMaster
+                    [device_vendor_class_id] => 
+                    [device_model] => FRITZ!Box 7590
+                    [device_manufacturer] => AVM
+                    [device_firmware_version] => 154.08.02
+                    [device_mac_address] => 74:42:7F:03:55:72
+                    [is_meshed] => 1
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-6
+                                    [name] => LANBridge
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [uid] => ni-20
+                                    [name] => LAN:1
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-96
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-102
+                                                    [node_interface_1_uid] => ni-20
+                                                    [node_interface_2_uid] => ni-103
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [uid] => ni-24
+                                    [name] => LAN:2
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-106
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-29
+                                                    [node_interface_1_uid] => ni-24
+                                                    [node_interface_2_uid] => ni-105
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [uid] => ni-25
+                                    [name] => LAN:3
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-114
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-112
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-113
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [uid] => nl-41
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-39
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-40
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [uid] => nl-72
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-70
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-71
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [uid] => nl-93
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-91
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-92
+                                                )
+
+                                            [4] => Array
+                                                (
+                                                    [uid] => nl-64
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-23
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-63
+                                                )
+
+                                            [5] => Array
+                                                (
+                                                    [uid] => nl-49
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-47
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-48
+                                                )
+
+                                            [6] => Array
+                                                (
+                                                    [uid] => nl-378
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-376
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-377
+                                                )
+
+                                            [7] => Array
+                                                (
+                                                    [uid] => nl-80
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-78
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-79
+                                                )
+
+                                            [8] => Array
+                                                (
+                                                    [uid] => nl-410
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-405
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-409
+                                                )
+
+                                            [9] => Array
+                                                (
+                                                    [uid] => nl-151
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-133
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-150
+                                                )
+
+                                        )
+
+                                )
+
+                            [4] => Array
+                                (
+                                    [uid] => ni-26
+                                    [name] => LAN:4
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [5] => Array
+                                (
+                                    [uid] => ni-27
+                                    [name] => WAN:1
+                                    [type] => LAN
+                                    [mac_address] => 74:42:7F:03:55:72
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [6] => Array
+                                (
+                                    [uid] => ni-73
+                                    [name] => AP:2G:0
+                                    [type] => WLAN
+                                    [mac_address] => 74:42:7F:03:55:75
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-43
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762518076
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-274
+                                                    [node_interface_1_uid] => ni-73
+                                                    [node_interface_2_uid] => ni-275
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [uid] => nl-167
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1761244165
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-272
+                                                    [node_interface_1_uid] => ni-73
+                                                    [node_interface_2_uid] => ni-273
+                                                )
+
+                                        )
+
+                                )
+
+                            [7] => Array
+                                (
+                                    [uid] => ni-74
+                                    [name] => AP:5G:0
+                                    [type] => WLAN
+                                    [mac_address] => 74:42:7F:03:55:74
+                                    [node_uid] => n-1
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-290
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1761773633
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-104
+                                                    [node_interface_1_uid] => ni-74
+                                                    [node_interface_2_uid] => ni-341
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-23] => Array
+                (
+                    [uid] => n-23
+                    [device_friendly_name] => homeserver
+                    [device_name] => homeserver
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 00:E0:B4:69:4F:06
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-63
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => 00:E0:B4:69:4F:06
+                                    [node_uid] => n-23
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-64
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-23
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-63
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-29] => Array
+                (
+                    [uid] => n-29
+                    [device_friendly_name] => 
+                    [device_name] => octopi
+                    [device_vendor_class_id] => dhcpcd-8.1.2:Linux-6.1.21-v7+:armv7l:BCM2835
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => B8:27:EB:33:24:8A
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-105
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => B8:27:EB:33:24:8A
+                                    [node_uid] => n-29
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-106
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-29
+                                                    [node_interface_1_uid] => ni-24
+                                                    [node_interface_2_uid] => ni-105
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-39] => Array
+                (
+                    [uid] => n-39
+                    [device_friendly_name] => 
+                    [device_name] => docker
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:89:AE:DE
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-40
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:89:AE:DE
+                                    [node_uid] => n-39
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-41
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-39
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-40
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-47] => Array
+                (
+                    [uid] => n-47
+                    [device_friendly_name] => 
+                    [device_name] => zabbix
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:35:68:7A
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-48
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:35:68:7A
+                                    [node_uid] => n-47
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-49
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-47
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-48
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-70] => Array
+                (
+                    [uid] => n-70
+                    [device_friendly_name] => 
+                    [device_name] => cacti
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:90:7B:10
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-71
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:90:7B:10
+                                    [node_uid] => n-70
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-72
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-70
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-71
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-78] => Array
+                (
+                    [uid] => n-78
+                    [device_friendly_name] => heimnetz
+                    [device_name] => heimnetz
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:A9:A5:E0
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-79
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:A9:A5:E0
+                                    [node_uid] => n-78
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-80
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-78
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-79
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-91] => Array
+                (
+                    [uid] => n-91
+                    [device_friendly_name] => proxy.schnoogcontrol.de
+                    [device_name] => proxy-schnoogcontrol-de
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:E1:88:5F
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-92
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:E1:88:5F
+                                    [node_uid] => n-91
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-93
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-91
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-92
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-112] => Array
+                (
+                    [uid] => n-112
+                    [device_friendly_name] => 
+                    [device_name] => testdocker
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:B2:E1:E0
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-113
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:B2:E1:E0
+                                    [node_uid] => n-112
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-114
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-112
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-113
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-102] => Array
+                (
+                    [uid] => n-102
+                    [device_friendly_name] => 
+                    [device_name] => pihole
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => B8:27:EB:9E:60:70
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-103
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => B8:27:EB:9E:60:70
+                                    [node_uid] => n-102
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-96
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-102
+                                                    [node_interface_1_uid] => ni-20
+                                                    [node_interface_2_uid] => ni-103
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-188] => Array
+                (
+                    [uid] => n-188
+                    [device_friendly_name] => 
+                    [device_name] => Volla-Phone-Quintus
+                    [device_vendor_class_id] => android-dhcp-15
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => C2:D1:60:84:8E:B7
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-303
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => C2:D1:60:84:8E:B7
+                                    [node_uid] => n-188
+                                    [node_links] => Array
+                                        (
+                                            [2] => Array
+                                                (
+                                                    [uid] => nl-46
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762531973
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-188
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-303
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-268] => Array
+                (
+                    [uid] => n-268
+                    [device_friendly_name] => 
+                    [device_name] => tasmota-B071B5-4533
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 84:F3:EB:B0:71:B5
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-269
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 84:F3:EB:B0:71:B5
+                                    [node_uid] => n-268
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-68
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-268
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-269
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-270] => Array
+                (
+                    [uid] => n-270
+                    [device_friendly_name] => IntervalSwitch
+                    [device_name] => IntervalSwitch
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 5C:CF:7F:3C:6B:38
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-271
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 5C:CF:7F:3C:6B:38
+                                    [node_uid] => n-270
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-160
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-270
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-271
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-272] => Array
+                (
+                    [uid] => n-272
+                    [device_friendly_name] => 
+                    [device_name] => consumption-0548
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => C0:49:EF:F1:42:24
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-273
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => C0:49:EF:F1:42:24
+                                    [node_uid] => n-272
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-167
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1761244165
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-272
+                                                    [node_interface_1_uid] => ni-73
+                                                    [node_interface_2_uid] => ni-273
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-274] => Array
+                (
+                    [uid] => n-274
+                    [device_friendly_name] => filastation
+                    [device_name] => filastation
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => F4:12:FA:CD:26:8C
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-275
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => F4:12:FA:CD:26:8C
+                                    [node_uid] => n-274
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-43
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762518076
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-274
+                                                    [node_interface_1_uid] => ni-73
+                                                    [node_interface_2_uid] => ni-275
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-276] => Array
+                (
+                    [uid] => n-276
+                    [device_friendly_name] => 
+                    [device_name] => OpenDTU-F14260
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => C0:49:EF:F1:42:60
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-277
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => C0:49:EF:F1:42:60
+                                    [node_uid] => n-276
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-177
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-276
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-277
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-297] => Array
+                (
+                    [uid] => n-297
+                    [device_friendly_name] => 
+                    [device_name] => tasmota-ZSU2-5333
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 40:91:51:6A:F4:D5
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-298
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 40:91:51:6A:F4:D5
+                                    [node_uid] => n-297
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-279
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-297
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-298
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-299] => Array
+                (
+                    [uid] => n-299
+                    [device_friendly_name] => 
+                    [device_name] => LibreELEC
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => B8:27:EB:10:CE:58
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-300
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => B8:27:EB:10:CE:58
+                                    [node_uid] => n-299
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-385
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762525823
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-299
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-300
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-301] => Array
+                (
+                    [uid] => n-301
+                    [device_friendly_name] => 
+                    [device_name] => raspberrypi
+                    [device_vendor_class_id] => dhcpcd-8.1.2:Linux-5.15.32-v7+:armv7l:BCM2835
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 7C:DD:90:67:D5:F2
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-302
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 7C:DD:90:67:D5:F2
+                                    [node_uid] => n-301
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-345
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-301
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-302
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-304] => Array
+                (
+                    [uid] => n-304
+                    [device_friendly_name] => AVRemote
+                    [device_name] => AVRemote
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 5C:CF:7F:3C:69:18
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-305
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 5C:CF:7F:3C:69:18
+                                    [node_uid] => n-304
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-134
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762507714
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-304
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-305
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-306] => Array
+                (
+                    [uid] => n-306
+                    [device_friendly_name] => 
+                    [device_name] => 21051182G
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 96:1F:F0:79:AB:C9
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-307
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 96:1F:F0:79:AB:C9
+                                    [node_uid] => n-306
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-174
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-306
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-307
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-308] => Array
+                (
+                    [uid] => n-308
+                    [device_friendly_name] => 
+                    [device_name] => volker-Crawler-E25
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => A4:42:3B:F9:64:9C
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-309
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => A4:42:3B:F9:64:9C
+                                    [node_uid] => n-308
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-76
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762531283
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-308
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-309
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-310] => Array
+                (
+                    [uid] => n-310
+                    [device_friendly_name] => 
+                    [device_name] => Pixel-7a
+                    [device_vendor_class_id] => android-dhcp-16
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 0A:B6:57:9C:38:80
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-311
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 0A:B6:57:9C:38:80
+                                    [node_uid] => n-310
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-35
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-310
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-311
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-312] => Array
+                (
+                    [uid] => n-312
+                    [device_friendly_name] => 
+                    [device_name] => vero
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 90:0E:B3:37:51:12
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-313
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => 90:0E:B3:37:51:12
+                                    [node_uid] => n-312
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-343
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-312
+                                                    [node_interface_1_uid] => ni-332
+                                                    [node_interface_2_uid] => ni-313
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-314] => Array
+                (
+                    [uid] => n-314
+                    [device_friendly_name] => 
+                    [device_name] => vero2
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 94:CC:04:60:0E:D1
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-315
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => 94:CC:04:60:0E:D1
+                                    [node_uid] => n-314
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-344
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-314
+                                                    [node_interface_1_uid] => ni-336
+                                                    [node_interface_2_uid] => ni-315
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-200] => Array
+                (
+                    [uid] => n-200
+                    [device_friendly_name] => 
+                    [device_name] => CHB13219
+                    [device_vendor_class_id] => MSFT 5.0
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 38:D5:7A:47:E2:9D
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-201
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 38:D5:7A:47:E2:9D
+                                    [node_uid] => n-200
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-218] => Array
+                (
+                    [uid] => n-218
+                    [device_friendly_name] => 
+                    [device_name] => fancontrol
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => B4:E6:2D:9C:54:25
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-219
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => B4:E6:2D:9C:54:25
+                                    [node_uid] => n-218
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-229] => Array
+                (
+                    [uid] => n-229
+                    [device_friendly_name] => printcam
+                    [device_name] => printcam
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 84:F7:03:E8:6E:DA
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-230
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 84:F7:03:E8:6E:DA
+                                    [node_uid] => n-229
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-376] => Array
+                (
+                    [uid] => n-376
+                    [device_friendly_name] => 
+                    [device_name] => 
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:B2:88:EF
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-377
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:B2:88:EF
+                                    [node_uid] => n-376
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-378
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-376
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-377
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-248] => Array
+                (
+                    [uid] => n-248
+                    [device_friendly_name] => 
+                    [device_name] => ESP-21B8C9
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => A0:20:A6:21:B8:C9
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-249
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => A0:20:A6:21:B8:C9
+                                    [node_uid] => n-248
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-104] => Array
+                (
+                    [uid] => n-104
+                    [device_friendly_name] => 
+                    [device_name] => fritz.repeater
+                    [device_vendor_class_id] => FRITZ!Repeater 3000
+                    [device_model] => FRITZ!Repeater 3000
+                    [device_manufacturer] => AVM
+                    [device_firmware_version] => 174.08.20
+                    [device_mac_address] => 3C:37:12:45:1A:B9
+                    [is_meshed] => 1
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-329
+                                    [name] => LANBridge
+                                    [type] => LAN
+                                    [mac_address] => 22:37:12:45:1A:BC
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [uid] => ni-332
+                                    [name] => LAN:1
+                                    [type] => LAN
+                                    [mac_address] => 22:37:12:45:1A:BC
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-343
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-312
+                                                    [node_interface_1_uid] => ni-332
+                                                    [node_interface_2_uid] => ni-313
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [uid] => ni-336
+                                    [name] => LAN:2
+                                    [type] => LAN
+                                    [mac_address] => 22:37:12:45:1A:BC
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-344
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-314
+                                                    [node_interface_1_uid] => ni-336
+                                                    [node_interface_2_uid] => ni-315
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [uid] => ni-337
+                                    [name] => AP:2G:0
+                                    [type] => WLAN
+                                    [mac_address] => 3C:37:12:45:1A:BC
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-345
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-301
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-302
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [uid] => nl-253
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-104
+                                                    [node_interface_1_uid] => ni-250
+                                                    [node_interface_2_uid] => ni-337
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [uid] => nl-134
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762507714
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-304
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-305
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [uid] => nl-385
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762525823
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-299
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-300
+                                                )
+
+                                            [5] => Array
+                                                (
+                                                    [uid] => nl-279
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-297
+                                                    [node_interface_1_uid] => ni-337
+                                                    [node_interface_2_uid] => ni-298
+                                                )
+
+                                        )
+
+                                )
+
+                            [4] => Array
+                                (
+                                    [uid] => ni-338
+                                    [name] => AP:5G:0
+                                    [type] => WLAN
+                                    [mac_address] => 3C:37:12:45:1A:BD
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-76
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762531283
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-308
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-309
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [uid] => nl-52
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-109
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-251
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [uid] => nl-35
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-310
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-311
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [uid] => nl-174
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-306
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-307
+                                                )
+
+                                            [4] => Array
+                                                (
+                                                    [uid] => nl-46
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762531973
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-188
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-303
+                                                )
+
+                                        )
+
+                                )
+
+                            [5] => Array
+                                (
+                                    [uid] => ni-339
+                                    [name] => AP:5G:1
+                                    [type] => WLAN
+                                    [mac_address] => 3C:37:12:45:1A:BE
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [1] => Array
+                                                (
+                                                    [uid] => nl-181
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-109
+                                                    [node_interface_1_uid] => ni-339
+                                                    [node_interface_2_uid] => ni-252
+                                                )
+
+                                        )
+
+                                )
+
+                            [6] => Array
+                                (
+                                    [uid] => ni-340
+                                    [name] => UPLINK:2G:0
+                                    [type] => WLAN
+                                    [mac_address] => 5E:37:12:45:1A:BC
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [7] => Array
+                                (
+                                    [uid] => ni-341
+                                    [name] => UPLINK:5G:0
+                                    [type] => WLAN
+                                    [mac_address] => 5E:37:12:45:1A:BD
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-290
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1761773633
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-104
+                                                    [node_interface_1_uid] => ni-74
+                                                    [node_interface_2_uid] => ni-341
+                                                )
+
+                                        )
+
+                                    [client_position] => ok
+                                )
+
+                            [8] => Array
+                                (
+                                    [uid] => ni-342
+                                    [name] => UPLINK:5G:1
+                                    [type] => WLAN
+                                    [mac_address] => 5E:37:12:45:1A:BE
+                                    [node_uid] => n-104
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-109] => Array
+                (
+                    [uid] => n-109
+                    [device_friendly_name] => fritz.buerorepeater
+                    [device_name] => fritz-buerorepeater
+                    [device_vendor_class_id] => FRITZ!Repeater 3000
+                    [device_model] => FRITZ!Repeater 3000
+                    [device_manufacturer] => AVM
+                    [device_firmware_version] => 174.08.20
+                    [device_mac_address] => 1C:ED:6F:33:A1:2D
+                    [is_meshed] => 1
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-240
+                                    [name] => LAN:1
+                                    [type] => LAN
+                                    [mac_address] => 02:ED:6F:33:A1:30
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [uid] => ni-243
+                                    [name] => LANBridge
+                                    [type] => LAN
+                                    [mac_address] => 02:ED:6F:33:A1:30
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [uid] => ni-244
+                                    [name] => LAN:2
+                                    [type] => LAN
+                                    [mac_address] => 02:ED:6F:33:A1:30
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [uid] => ni-245
+                                    [name] => AP:2G:0
+                                    [type] => WLAN
+                                    [mac_address] => 1C:ED:6F:33:A1:30
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-177
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-276
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-277
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [uid] => nl-160
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-270
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-271
+                                                )
+
+                                            [3] => Array
+                                                (
+                                                    [uid] => nl-68
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-268
+                                                    [node_interface_1_uid] => ni-245
+                                                    [node_interface_2_uid] => ni-269
+                                                )
+
+                                        )
+
+                                )
+
+                            [4] => Array
+                                (
+                                    [uid] => ni-246
+                                    [name] => AP:5G:0
+                                    [type] => WLAN
+                                    [mac_address] => 1C:ED:6F:33:A1:31
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [5] => Array
+                                (
+                                    [uid] => ni-247
+                                    [name] => AP:5G:1
+                                    [type] => WLAN
+                                    [mac_address] => 1C:ED:6F:33:A1:32
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [6] => Array
+                                (
+                                    [uid] => ni-250
+                                    [name] => UPLINK:2G:0
+                                    [type] => WLAN
+                                    [mac_address] => 3E:ED:6F:33:A1:30
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-253
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-109
+                                                    [node_2_uid] => n-104
+                                                    [node_interface_1_uid] => ni-250
+                                                    [node_interface_2_uid] => ni-337
+                                                )
+
+                                        )
+
+                                    [client_position] => ok
+                                )
+
+                            [7] => Array
+                                (
+                                    [uid] => ni-251
+                                    [name] => UPLINK:5G:0
+                                    [type] => WLAN
+                                    [mac_address] => 3E:ED:6F:33:A1:31
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-52
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-109
+                                                    [node_interface_1_uid] => ni-338
+                                                    [node_interface_2_uid] => ni-251
+                                                )
+
+                                        )
+
+                                    [client_position] => ok
+                                )
+
+                            [8] => Array
+                                (
+                                    [uid] => ni-252
+                                    [name] => UPLINK:5G:1
+                                    [type] => WLAN
+                                    [mac_address] => 3E:ED:6F:33:A1:32
+                                    [node_uid] => n-109
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-181
+                                                    [type] => WLAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 1762466494
+                                                    [node_1_uid] => n-104
+                                                    [node_2_uid] => n-109
+                                                    [node_interface_1_uid] => ni-339
+                                                    [node_interface_2_uid] => ni-252
+                                                )
+
+                                        )
+
+                                    [client_position] => ok
+                                )
+
+                        )
+
+                )
+
+            [n-361] => Array
+                (
+                    [uid] => n-361
+                    [device_friendly_name] => 
+                    [device_name] => BRW5CF370CD93D5
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 5C:F3:70:CD:93:D5
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-362
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 5C:F3:70:CD:93:D5
+                                    [node_uid] => n-361
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-296] => Array
+                (
+                    [uid] => n-296
+                    [device_friendly_name] => 
+                    [device_name] => kobo
+                    [device_vendor_class_id] => dhcpcd-6.6.6:Linux-2.6.35.3-850-gbc67621+:armv7l:Freescale
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => 78:45:61:2C:1C:79
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-289
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => 78:45:61:2C:1C:79
+                                    [node_uid] => n-296
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-163] => Array
+                (
+                    [uid] => n-163
+                    [device_friendly_name] => 
+                    [device_name] => esp32s3-CB45B4
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => F4:12:FA:CB:45:B4
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-226
+                                    [name] => 
+                                    [type] => WLAN
+                                    [mac_address] => F4:12:FA:CB:45:B4
+                                    [node_uid] => n-163
+                                    [node_links] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-405] => Array
+                (
+                    [uid] => n-405
+                    [device_friendly_name] => 
+                    [device_name] => vault
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:32:1C:3A
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-409
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:32:1C:3A
+                                    [node_uid] => n-405
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-410
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-405
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-409
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [n-133] => Array
+                (
+                    [uid] => n-133
+                    [device_friendly_name] => 
+                    [device_name] => cert
+                    [device_vendor_class_id] => 
+                    [device_model] => 
+                    [device_manufacturer] => 
+                    [device_firmware_version] => 
+                    [device_mac_address] => BC:24:11:D9:8B:E6
+                    [device_id] => 
+                    [device_capabilities] => 
+                    [enabled_device_capabilities] => 
+                    [is_meshed] => 
+                    [node_interfaces] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [uid] => ni-150
+                                    [name] => 
+                                    [type] => LAN
+                                    [mac_address] => BC:24:11:D9:8B:E6
+                                    [node_uid] => n-133
+                                    [node_links] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [uid] => nl-151
+                                                    [type] => LAN
+                                                    [state] => CONNECTED
+                                                    [last_connected] => 0
+                                                    [node_1_uid] => n-1
+                                                    [node_2_uid] => n-133
+                                                    [node_interface_1_uid] => ni-25
+                                                    [node_interface_2_uid] => ni-150
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

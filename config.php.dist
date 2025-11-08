@@ -1,0 +1,8 @@
+<?php
+
+
+$CONFIG['fritz'] = [
+    'host' => '192.168.178.1',
+    'user' => 'fritz8888',
+    'pass' => 'password'
+];
